@@ -302,6 +302,8 @@ for ( i = 0; i < LINHAS; i++)
 
 
 //OPERADORES ARITMETICOS
+
+/*
      int valor1, valor2, soma, mult, sub, numero;
         float div;
 
@@ -330,13 +332,47 @@ for ( i = 0; i < LINHAS; i++)
                 printf("Resultado dividindo n1, n2: \n");
                 printf("%f\n", div);
     
+*/
+
+/*
+
+unsigned long long sequencia[1001];
+
+sequencia[0] = 34;
+sequencia[1] = 55;
+
+for (int i = 2; i < 1001; i++) {
+  sequencia[i] = sequencia[i - 1] + sequencia[i - 2];
+}
+
+printf("%d ", sequencia[0]);
+for (int i = 1; i < 1001; i++) {
+  printf("%llu ", sequencia[i]);
+}
+
+*/
 
 
 
+#define LINHAS 3 //CONSTATNTE
+#define COLUNAS 3 //CONSTATNTE
+
+   int vetor [LINHAS][COLUNAS], i, j;
+
+for ( i = 0; i < LINHAS; i++)
+{
+
+    for ( j = 0; j < COLUNAS; j++)
+{
+    printf("Linhas [%d] x 5 = %d Colunas [%d] x 5 = %d\n", i, i*5, j , j*5);
+
+    //scanf("%d", &vetor[i][j]);
+}
+}
 
 
 
-  return 0;
+      return 0;
 
 
 
